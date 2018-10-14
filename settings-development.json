@@ -1,0 +1,21 @@
+{
+  "public": {
+    "productName": "kwan",
+    "copyrightStartYear": "2018",
+    "twitterUsername": "product",
+    "facebookUsername": "product",
+    "productAddress": "Av. Forest 1146 2G, C1427CEV, C.A.B.A., Argentina"
+  },
+  "private": {
+    "MAIL_URL": "smtp://d345e5f4-6871-4669-af14-7108fa24c070:d345e5f4-6871-4669-af14-7108fa24c070@smtp.postmarkapp.com:587",
+    "OAuth": {
+      "facebook": {
+        "enabled": true,
+        "appId": "2070205106587972",
+        "secret": "3bc849138829df6af8c998a833649931",
+        "loginStyle": "popup"
+      }
+    },
+    "supportEmail": "support@product.com"
+  }
+}
