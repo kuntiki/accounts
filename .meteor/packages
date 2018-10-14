@@ -31,6 +31,7 @@ fortawesome:fontawesome
 aldeed:collection2-core@2.0.1
 audit-argument-checks@1.0.7
 ddp-rate-limiter@1.0.7
-dynamic-import@0.3.0
+dynamic-import@0.3.1
 static-html
-server-render
+server-render@0.3.0
+underscore
