@@ -46,14 +46,14 @@ class AccountForm extends React.Component {
 
     if (existingAccount) account._id = existingAccount;
 
-    Meteor.call(methodToCall, account, (error, documentId) => {
+    Meteor.call(methodToCall, account, (error, accountId) => {
       if (error) {
         Bert.alert(error.reason, 'danger');
       } else {
         const confirmation = existingAccount ? 'Account updated!' : 'Account added!';
         this.form.reset();
         Bert.alert(confirmation, 'success');
-        history.push(`/accounts/${documentId}`);
+        history.push(`/glaccounts/${accountId}`);
       }
     });
   }
@@ -84,7 +84,7 @@ class AccountForm extends React.Component {
         </FormGroup>
         <FormGroup>
           <ControlLabel>Type</ControlLabel>
-          <FormControl componentClass="select" placeholder="Expense" name="type" defaultValue={account.type || "Expense"}>
+          <FormControl componentClass="select" placeholder="Expense" name="type" defaultValue={account.type || 'Expense'}>
             <option value="Asset">Asset</option>
             <option value="Liability">Liability</option>
             <option value="Equity">Equity</option>
@@ -94,7 +94,7 @@ class AccountForm extends React.Component {
         </FormGroup>
         <FormGroup>
           <ControlLabel>Currency</ControlLabel>
-          <FormControl componentClass="select" placeholder="USD" name="currency">
+          <FormControl componentClass="select" placeholder="USD" name="currency" defaultValue={account.currency || 'USD'}>
             <option value="ARS">Argentine Peso</option>
             <option value="COP">Colombian Peso</option>
             <option value="EUR">Euro</option>

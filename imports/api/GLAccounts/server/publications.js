@@ -2,10 +2,7 @@ import { Meteor } from 'meteor/meteor';
 import { check } from 'meteor/check';
 import GLAccounts from '../GLAccounts';
 
-Meteor.publish('accounts', () => { 
-  console.log('publishing'); 
-  return GLAccounts.find();
-});
+Meteor.publish('accounts', () => GLAccounts.find());
 
 Meteor.publish('accounts.view', (accountId) => {
   check(accountId, String);
