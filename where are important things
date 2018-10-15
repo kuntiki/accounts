@@ -1,0 +1,19 @@
+Application client starts at:
+/imports/startup/client/index.js --here there´s the basic setup of the client Application
+
+App component is found at:
+/imports/ui/layouts/App/App.js --routes are defined here
+
+Methods have to be included at:
+/imports/startup/both/api.js
+
+Publications have to be included at:
+/imports/startup/server/api.js
+
+Schemas will be included at:
+/imports/api/Model/Model.js  --where Model is the name of the collection/model we're defining
+
+There are 3 types of components:
+- layouts: at /imports/ui/layouts
+- pages: at /imports/ui/pages
+- components: at /imports/ui/components

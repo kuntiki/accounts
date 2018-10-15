@@ -1,8 +1,4 @@
-### Pup
-A boilerplate for products.
+### Accounts 
+Accounts is a personal accounting app
 
-[Read the Documentation](http://cleverbeagle.com/pup)
-
----
-
-Need help and want to stay accountable building your product? [Check out Clever Beagle](http://cleverbeagle.com).
+[Powered by PUP](http://cleverbeagle.com/pup)
