@@ -1,0 +1,11 @@
+imports/ui/components/GLAccounts/AccountForm
+* fill select with schema allowedValues instead of manually in code
+
+imports/ui/pages/GLAccounts/EditGLAccount
+* add page to edit an account
+
+imports/ui/pages/FinancialStatements/QuickBalance
+* add page to show a Balance Sheet
+
+imports/ui/pages/FinancialStatements/ProfitLoss
+* add page to show a Profit & Loss Statement
