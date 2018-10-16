@@ -13,14 +13,17 @@ const AuthenticatedNavigation = ({ name, history }) => (
       <LinkContainer to="/glaccounts">
         <NavItem eventKey={2} href="/glaccounts">GL Accounts</NavItem>
       </LinkContainer>
+      <LinkContainer to="/transactions">
+        <NavItem eventKey={3} href="/transactions">Transactions</NavItem>
+      </LinkContainer>
     </Nav>
     <Nav pullRight>
-      <NavDropdown eventKey={3} title={name} id="user-nav-dropdown">
+      <NavDropdown eventKey={4} title={name} id="user-nav-dropdown">
         <LinkContainer to="/profile">
-          <NavItem eventKey={3.1} href="/profile">Profile</NavItem>
+          <NavItem eventKey={4.1} href="/profile">Profile</NavItem>
         </LinkContainer>
         <MenuItem divider />
-        <MenuItem eventKey={3.2} onClick={() => history.push('/logout')}>Logout</MenuItem>
+        <MenuItem eventKey={4.2} onClick={() => history.push('/logout')}>Logout</MenuItem>
       </NavDropdown>
     </Nav>
   </div>

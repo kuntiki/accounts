@@ -21,6 +21,7 @@ import GLAccounts from '../../pages/GLAccounts/GLAccounts';
 import NewGLAccount from '../../pages/GLAccounts/NewGLAccount';
 import ViewGLAccount from '../../pages/GLAccounts/ViewGLAccount';
 import EditGLAccount from '../../pages/GLAccounts/EditGLAccount';
+import Transactions from '../../pages/Transactions/Transactions';
 import Signup from '../../pages/Signup/Signup';
 import Login from '../../pages/Login/Login';
 import Logout from '../../pages/Logout/Logout';
@@ -108,6 +109,7 @@ class App extends React.Component {
             <Authenticated exact path="/glaccounts/new" component={NewGLAccount} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
             <Authenticated exact path="/glaccounts/:_id" component={ViewGLAccount} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
             <Authenticated exact path="/glaccounts/:_id/edit" component={EditGLAccount} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
+            <Authenticated exact path="/transactions" component={Transactions} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
             <Authenticated exact path="/profile" component={Profile} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
             <Public path="/signup" component={Signup} {...props} {...state} />
             <Public path="/login" component={Login} {...props} {...state} />
